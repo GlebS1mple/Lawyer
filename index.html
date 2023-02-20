@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230220230415" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <picture>
+            <source srcset="img/building-2.webp" type="image/webp"><img src="img/building-2.png" alt="Дом"
+                class="main__building">
+        </picture>
+        <picture>
+            <source srcset="img/Ellipse.webp" type="image/webp"><img src="img/Ellipse.png" alt="Фон"
+                class="main__ellips">
+        </picture>
+        <header>
+            <div class="container header__container">
+                <p class="header__logo">LOGO</p>
+                <ul class="header__list">
+                    <li><a href="#" class="header__link">Обо мне</a></li>
+                    <li><a href="#" class="header__link">Услуги</a></li>
+                    <li><a href="#" class="header__link">Контакты</a></li>
+                </ul>
+                <div class="header__contacts">
+                    <div class="header__phoneblock">
+                        <picture>
+                            <source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt="Телефон"
+                                class="header__phone">
+                        </picture>
+                        <a href="tel:+77070000000" class="header__number">+7 (707) 000-00-00</a>
+                    </div>
+                    <div class="header__media">
+                        <svg class="header__medialink" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.987" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.8438 0C23.2812 0 24.7188 0 26.1562 0C34.5604 1.02074 40.8885 5.177 45.1406 12.4688C46.7058 15.4192 47.6588 18.5441 48 21.8438C48 23.2812 48 24.7188 48 26.1562C46.9793 34.5604 42.823 40.8885 35.5312 45.1406C32.5808 46.7058 29.4559 47.6588 26.1562 48C24.7188 48 23.2812 48 21.8438 48C13.4396 46.9793 7.11152 42.823 2.85938 35.5312C1.29425 32.5808 0.341119 29.4559 0 26.1562C0 24.7188 0 23.2812 0 21.8438C1.0207 13.4397 5.17695 7.11162 12.4688 2.85938C15.4192 1.29425 18.5441 0.341119 21.8438 0ZM23.3438 10.2188C25.4993 10.281 27.6556 10.3279 29.8125 10.3594C33.1626 10.3997 35.5532 11.9152 36.9844 14.9062C37.3713 15.966 37.5901 17.0597 37.6406 18.1875C37.7032 22.0625 37.7032 25.9375 37.6406 29.8125C37.2813 34.6718 34.6718 37.2813 29.8125 37.6406C27.8742 37.6642 25.9367 37.7111 24 37.7812C22.0633 37.7111 20.1258 37.6642 18.1875 37.6406C14.8374 37.6003 12.4468 36.0848 11.0156 33.0938C10.6287 32.034 10.4099 30.9403 10.3594 29.8125C10.3427 27.8709 10.2958 25.9334 10.2188 24C10.2958 22.0666 10.3427 20.1291 10.3594 18.1875C10.4306 14.4321 12.2274 11.9477 15.75 10.7344C16.5199 10.5383 17.3011 10.4134 18.0938 10.3594C19.8598 10.3436 21.6098 10.2968 23.3438 10.2188Z"
+                                fill="#CE9D77" />
+                            <path opacity="0.977" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.2188 12.6562C22.4065 12.6406 25.594 12.6562 28.7813 12.7031C33.2657 12.5625 35.4376 14.7344 35.297 19.2187C35.3803 22.9388 35.349 26.6576 35.2032 30.375C34.9336 32.9563 33.5429 34.5345 31.0313 35.1094C30.2847 35.2085 29.5347 35.2709 28.7813 35.2969C25.0612 35.3802 21.3425 35.3489 17.6251 35.2031C15.0322 34.9481 13.4541 33.5575 12.8907 31.0312C12.7932 30.3158 12.7308 29.5971 12.7032 28.875C12.6191 25.1236 12.6503 21.3736 12.797 17.625C13.052 15.0321 14.4426 13.454 16.9688 12.8906C17.7323 12.8068 18.4823 12.7287 19.2188 12.6562ZM31.2188 15C31.0161 15.0908 30.7973 15.1689 30.5626 15.2344C29.4521 16.1745 29.4521 17.112 30.5626 18.0469C31.8946 18.4984 32.707 18.0296 33.0001 16.6406C32.8098 15.6533 32.216 15.1065 31.2188 15ZM23.2501 16.9687C20.5614 17.4218 18.6396 18.8905 17.4845 21.375C16.4056 24.5437 17.1087 27.2468 19.5938 29.4844C22.2098 31.3568 24.9286 31.5131 27.7501 29.9531C30.7205 27.7606 31.6423 24.9012 30.5157 21.375C29.073 18.3168 26.6512 16.848 23.2501 16.9687Z"
+                                fill="#CE9D77" />
+                            <path opacity="0.977" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.0625 19.4063C25.4419 19.1191 27.1763 20.0253 28.2656 22.125C29.1413 24.8443 28.3444 26.8912 25.875 28.2656C23.1557 29.1413 21.1088 28.3444 19.7344 25.875C18.9442 23.6131 19.4598 21.7224 21.2813 20.2031C21.8393 19.8357 22.4331 19.5701 23.0625 19.4063Z"
+                                fill="#CE9D77" />
+                        </svg>
+                        <svg class="header__medialink" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.9375 0C23.3438 0 24.75 0 26.1562 0C34.5604 1.02074 40.8885 5.177 45.1406 12.4688C46.7058 15.4192 47.6588 18.5441 48 21.8438C48 23.25 48 24.6562 48 26.0625C46.8296 35.4663 41.9546 42.1694 33.375 46.1719C31.014 47.1371 28.5765 47.7465 26.0625 48C24.6562 48 23.25 48 21.8438 48C12.49 46.7858 5.81817 41.9108 1.82812 33.375C0.877924 31.0428 0.268549 28.6366 0 26.1562C0 24.7188 0 23.2812 0 21.8438C0.919404 13.9446 4.70065 7.83519 11.3438 3.51562C14.6177 1.5441 18.1489 0.372225 21.9375 0ZM20.8125 16.2188C22.3152 16.1905 23.8152 16.2374 25.3125 16.3594C26.0875 16.4783 26.5094 16.9313 26.5781 17.7188C26.5938 18.0312 26.6093 18.3438 26.625 18.6562C26.5309 20.2493 26.5152 21.8431 26.5781 23.4375C26.6016 23.7426 26.6953 24.0238 26.8594 24.2812C27.1057 24.5145 27.3713 24.5302 27.6562 24.3281C28.5232 23.4521 29.2888 22.499 29.9531 21.4688C30.7207 20.0743 31.4238 18.6524 32.0625 17.2031C32.1875 17.1406 32.3125 17.0782 32.4375 17.0156C34.375 16.9531 36.3125 16.9531 38.25 17.0156C38.8268 17.153 39.03 17.5123 38.8594 18.0938C38.5766 18.9697 38.1703 19.7821 37.6406 20.5312C36.5782 21.9687 35.5156 23.4063 34.4531 24.8438C33.9981 25.4335 33.9668 26.0273 34.3594 26.625C35.7751 27.9465 37.0876 29.3528 38.2969 30.8438C38.6452 31.2746 38.8795 31.7589 39 32.2969C38.8366 32.8664 38.4616 33.2101 37.875 33.3281C36.3125 33.3907 34.75 33.3907 33.1875 33.3281C32.5628 33.2656 32.0003 33.0469 31.5 32.6719C30.5284 31.7317 29.5909 30.7628 28.6875 29.7656C28.3073 29.378 27.8698 29.2842 27.375 29.4844C27.2298 29.5982 27.1205 29.7388 27.0469 29.9062C26.792 30.8372 26.5732 31.7747 26.3906 32.7188C26.1972 32.9956 25.9316 33.1674 25.5938 33.2344C22.4107 33.5792 19.5982 32.7354 17.1562 30.7031C15.1634 28.7418 13.4916 26.5387 12.1406 24.0938C11.0656 22.1001 10.0657 20.0688 9.14062 18C9.02557 17.6165 9.1037 17.2883 9.375 17.0156C9.78169 16.9722 10.1879 16.9253 10.5938 16.875C11.8736 16.9463 13.1549 16.9932 14.4375 17.0156C14.8441 17.1412 15.1722 17.3755 15.4219 17.7188C16.2891 19.9542 17.4454 22.0167 18.8906 23.9062C19.1828 24.1835 19.5109 24.4022 19.875 24.5625C20.081 24.5299 20.2528 24.4361 20.3906 24.2812C20.4992 23.8784 20.5929 23.4721 20.6719 23.0625C20.7344 21.75 20.7344 20.4375 20.6719 19.125C20.5759 18.1852 20.0602 17.6383 19.125 17.4844C19.0447 17.4198 18.9822 17.3417 18.9375 17.25C19.0399 17.0068 19.1962 16.8037 19.4062 16.6406C19.8585 16.4025 20.3272 16.2619 20.8125 16.2188Z"
+                                fill="#CE9D77" />
+                        </svg>
+                        <svg class="header__medialink" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.993" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.9375 0C23.3438 0 24.75 0 26.1562 0C34.5604 1.02074 40.8885 5.177 45.1406 12.4688C46.7058 15.4192 47.6588 18.5441 48 21.8438C48 23.25 48 24.6562 48 26.0625C46.8296 35.4663 41.9546 42.1694 33.375 46.1719C31.014 47.1371 28.5765 47.7465 26.0625 48C24.6562 48 23.25 48 21.8438 48C12.2751 46.7555 5.5407 41.7242 1.64062 32.9062C0.799772 30.715 0.252897 28.465 0 26.1562C0 24.7188 0 23.2812 0 21.8438C0.919404 13.9446 4.70065 7.83519 11.3438 3.51562C14.6177 1.5441 18.1489 0.372225 21.9375 0ZM26.1562 11.4375C27.6295 11.4077 29.0982 11.439 30.5625 11.5312C30.6274 11.5805 30.6742 11.643 30.7031 11.7188C30.7657 13.125 30.7657 14.5312 30.7031 15.9375C30.625 16.0156 30.5468 16.0938 30.4688 16.1719C29.4375 16.2031 28.4062 16.2344 27.375 16.2656C26.6465 16.3694 26.2871 16.7913 26.2969 17.5312C26.25 18.4995 26.2344 19.4682 26.25 20.4375C27.6318 20.3953 29.0067 20.4422 30.375 20.5781C30.4876 20.6628 30.5658 20.7721 30.6094 20.9062C30.6719 22.3125 30.6719 23.7188 30.6094 25.125C30.5804 25.2437 30.5335 25.3531 30.4688 25.4531C29.0693 25.5892 27.663 25.636 26.25 25.5938C26.2657 29.1563 26.25 32.7188 26.2031 36.2812C26.125 36.3593 26.0468 36.4375 25.9688 36.5156C24.4375 36.5782 22.9062 36.5782 21.375 36.5156C21.1666 36.4545 21.0572 36.3139 21.0469 36.0938C21 32.5939 20.9843 29.0939 21 25.5938C19.8078 25.6232 18.6203 25.592 17.4375 25.5C17.3726 25.4508 17.3258 25.3883 17.2969 25.3125C17.2343 23.7813 17.2343 22.25 17.2969 20.7188C17.3438 20.6719 17.3906 20.625 17.4375 20.5781C18.6246 20.5312 19.8121 20.5156 21 20.5312C20.9663 19.0904 21.0132 17.6528 21.1406 16.2188C21.7222 13.4692 23.394 11.8755 26.1562 11.4375Z"
+                                fill="#CE9D77" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mainblock">
+            <main class="main">
+
+                <div class="container main__container">
+                    <div class="main__block">
+                        <div class="main__textblock">
+                            <h1 class="main__title">Паненко Мария Сергеевна</h1>
+                            <p class="main__text">Lorem Ipsum - это текст-"рыба", часто используемый
+                                в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице
+                                с начала
+                            </p>
+                            <button class="main__btn btn">
+                                <p class="btn__text">Получить консультацию</p>
+                                <svg class="btn__img" width="34" height="24" viewBox="0 0 34 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.5 12C32.5 18.0788 27.5924 23 21.5467 23C15.501 23 10.5934 18.0788 10.5934 12C10.5934 5.92119 15.501 1 21.5467 1C27.5924 1 32.5 5.92119 32.5 12Z"
+                                        stroke="white" stroke-width="2" />
+                                    <rect x="5.48438" y="6.375" width="8.59144" height="11.25" rx="4.29572"
+                                        fill="#CE9D77" />
+                                    <path
+                                        d="M1.5 12.5625H22.2938M22.2938 12.5625L18.7654 16.125M22.2938 12.5625L18.7654 9"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <picture>
+                            <source srcset="img/foto-03.webp" type="image/webp"><img src="img/foto-03.png"
+                                alt="Мария сергеевна" class="main__img">
+                        </picture>
+                    </div>
+                    <blockquote class="main__quote _anim__items _anim-no-hide">
+                        <picture>
+                            <source srcset="img/quotes.webp" type="image/webp"><img src="img/quotes.png" alt="Кавычки"
+                                class="main__quotes">
+                        </picture>
+                        <p class="main__quotetext">Если делать только то, что умеешь,</br>никогда не сможешь превзойти
+                            самого себя.
+                        </p>
+                        <picture>
+                            <source srcset="img/quotes.webp" type="image/webp"><img src="img/quotes.png" alt="Кавычки"
+                                class="main__quotes main__quotes_close">
+                        </picture>
+                    </blockquote>
+                    <div class="main__points">
+                        <div class="main__point point point_charter _anim__items _anim-no-hide">
+                            <picture>
+                                <source srcset="img/charter.webp" type="image/webp"><img src="img/charter.png"
+                                    alt="Грамота" class="point__img point__img_charter">
+                            </picture>
+                            <p class="point__text">16 лет судебной практики</p>
+                        </div>
+                        <div class="main__point point point_24 _anim__items _anim-no-hide">
+                            <picture>
+                                <source srcset="img/24.webp" type="image/webp"><img src="img/24.png" alt="24/7"
+                                    class="point__img point__img_24">
+                            </picture>
+                            <p class="point__text">На связи 24 часа</p>
+                        </div>
+                        <div class="main__point point point_consultant _anim__items _anim-no-hide">
+                            <picture>
+                                <source srcset="img/consultant.webp" type="image/webp"><img src="img/consultant.png"
+                                    alt="Консультант" class="point__img point__img_consultant">
+                            </picture>
+                            <p class="point__text">Возможны онлайн консультации</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <section id="about" class="about">
+                <picture>
+                    <source srcset="img/building.webp" type="image/webp"><img src="img/building.png" alt="Здание"
+                        class="about__building">
+                </picture>
+                <div class="container about__container">
+                    <h2 class="about__title title _anim__items _anim-no-hide">Обо мне</h2>
+                    <div class="about__block">
+                        <div class="about__imgblock _anim__items _anim-no-hide">
+                            <picture>
+                                <source srcset="img/foto-01.webp" type="image/webp"><img src="img/foto-01.jpg"
+                                    alt="Мария Сергеевна" class="about__img">
+                            </picture>
+                        </div>
+                        <div class="about__textblock _anim__items _anim-no-hide">
+                            <p class="about__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                вэб-дизайне.</p>
+                            <p class="about__subtext">Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                начала XVI
+                                века. В то время некий безымянный печатник создал большую коллекцию размеров </p>
+                            <div class="about__pecularities">
+                                <p class="about__name">Особенности работы</p>
+                                <div class="about__pecularitiesblock">
+                                    <div class="about__pecularity pecularity">
+                                        <picture>
+                                            <source srcset="img/likes.webp" type="image/webp"><img src="img/likes.png"
+                                                alt="Клиенты" class="pecularity__img pecularity__img_likes">
+                                        </picture>
+                                        <p class="pecularity__text">Более 90 клиентов</p>
+                                    </div>
+                                    <div class="about__pecularity pecularity">
+                                        <picture>
+                                            <source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png"
+                                                alt="Клиенты" class="pecularity__img pecularity__img_russia">
+                                        </picture>
+                                        <p class="pecularity__text">Рассмотрение дел во
+                                            всех регионах России</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="services">
+                <div class="container services__container">
+                    <h3 class="title services__title _anim__items _anim-no-hide">Услуги</h3>
+                    <div class="services__block _anim__items _anim-no-hide">
+                        <div data-spoilers data-one-spoiler class="block block__1">
+                            <div class="block__item">
+                                <button tabindex="-1" type="button" data-spoller class="block__titleblock">
+                                    <p class="block__title">
+                                        Услуга
+                                    </p>
+                                    <div class="block__arrowblock">
+                                    </div>
+                                </button>
+                                <div class="block__text">
+                                    <p class="block__maintext">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis esse enim,
+                                        corporis
+                                        numquam cum doloribus dolores ea obcaecati inventore a modi omnis nostrum.
+                                        Adipisci nisi
+                                        beatae obcaecati consectetur deleniti accusantium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block__item">
+                                <button tabindex="-1" type="button" data-spoller class="block__titleblock">
+                                    <p class="block__title">
+                                        Услуга
+                                    </p>
+                                    <div class="block__arrowblock">
+                                    </div>
+                                </button>
+                                <div class="block__text">
+                                    <p class="block__maintext">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis esse enim,
+                                        corporis
+                                        numquam cum doloribus dolores ea obcaecati inventore a modi omnis nostrum.
+                                        Adipisci nisi
+                                        beatae obcaecati consectetur deleniti accusantium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block__item">
+                                <button tabindex="-1" type="button" data-spoller class="block__titleblock">
+                                    <p class="block__title">
+                                        Услуга
+                                    </p>
+                                    <div class="block__arrowblock">
+                                    </div>
+                                </button>
+                                <div class="block__text">
+                                    <p class="block__maintext">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis esse enim,
+                                        corporis
+                                        numquam cum doloribus dolores ea obcaecati inventore a modi omnis nostrum.
+                                        Adipisci nisi
+                                        beatae obcaecati consectetur deleniti accusantium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block__item">
+                                <button tabindex="-1" type="button" data-spoller class="block__titleblock">
+                                    <p class="block__title">
+                                        Услуга
+                                    </p>
+                                    <div class="block__arrowblock">
+                                    </div>
+                                </button>
+                                <div class="block__text">
+                                    <p class="block__maintext">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis esse enim,
+                                        corporis
+                                        numquam cum doloribus dolores ea obcaecati inventore a modi omnis nostrum.
+                                        Adipisci nisi
+                                        beatae obcaecati consectetur deleniti accusantium.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <picture>
+                            <source srcset="img/foto-02.webp" type="image/webp"><img src="img/foto-02.jpg"
+                                alt="Мария Сергеевна" class="services__img _anim__items _anim-no-hide">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section class="algorithm">
+                <picture>
+                    <source srcset="img/building-2.webp" type="image/webp"><img src="img/building-2.png" alt="Здание"
+                        class="algorithm__building">
+                </picture>
+                <picture>
+                    <source srcset="img/Ellipse-2.webp" type="image/webp"><img src="img/Ellipse-2.png" alt="Фон"
+                        class="algorithm__ellipse">
+                </picture>
+                <container class="algorithm__container">
+                    <h4 class="title algorithm__title _anim__items _anim-no-hide">Алгоритм взаимодействия
+                        доверителя и авдоката</h4>
+                    <div class="algorithm__steps">
+                        <div class="algorithm__step _anim__items _anim-no-hide">
+                            <div class="algorithm__about">
+                                <div class="algorithm__numblock">
+                                    <p class="algorithm__num">1</p>
+                                </div>
+                                <p class="algorithm__name">Заголовок</p>
+                            </div>
+                            <p class="algorithm__text">Lorem Ipsum является стандартной "рыбой" для текстов
+                                на латинице с начала XVI века. В то время некий безымянный печатник создал большую
+                                коллекцию
+                                размеров </p>
+                        </div>
+                        <picture>
+                            <source srcset="img/arrow_down.webp" type="image/webp"><img src="img/arrow_down.png"
+                                alt="Стрелка" class="algorithm__arrow">
+                        </picture>
+                        <div class="algorithm__step _anim__items _anim-no-hide">
+                            <div class="algorithm__about">
+                                <div class="algorithm__numblock">
+                                    <p class="algorithm__num">2</p>
+                                </div>
+                                <p class="algorithm__name">Заголовок</p>
+                            </div>
+                            <p class="algorithm__text">Lorem Ipsum является стандартной "рыбой" для текстов
+                                на латинице с начала XVI века. В то время некий безымянный печатник создал большую
+                                коллекцию
+                                размеров </p>
+                        </div>
+                        <picture>
+                            <source srcset="img/arrow_down.webp" type="image/webp"><img src="img/arrow_down.png"
+                                alt="Стрелка" class="algorithm__arrow">
+                        </picture>
+                        <div class="algorithm__step _anim__items _anim-no-hide">
+                            <div class="algorithm__about">
+                                <div class="algorithm__numblock">
+                                    <p class="algorithm__num">3</p>
+                                </div>
+                                <p class="algorithm__name">Заголовок</p>
+                            </div>
+                            <p class="algorithm__text">Lorem Ipsum является стандартной "рыбой" для текстов
+                                на латинице с начала XVI века. В то время некий безымянный печатник создал большую
+                                коллекцию
+                                размеров </p>
+                        </div>
+                    </div>
+                </container>
+            </section>
+            <section id="certifictes" class="certifictes">
+                <div class="container certifictes__container">
+                    <h5 class="title certifictes__title _anim__items _anim-no-hide">Сертификаты</h5>
+                    <div class="swiper">
+                        <div class="slither swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="img/charter_2.webp" type="image/webp"><img src="img/charter_2.png"
+                                        alt="Сертификат" class="certifictes__img">
+                                </picture>
+                            </div>
+                        </div>
+                        <button class="swiper-prev">
+                            <picture>
+                                <source srcset="img/arrow_white.webp" type="image/webp"><img src="img/arrow_white.png"
+                                    alt="Стрелка вправо" class="swiper__arrow swiper__arrow_prev">
+                            </picture>
+                        </button>
+                        <button class="swiper-next">
+                            <picture>
+                                <source srcset="img/arrow_white.webp" type="image/webp"><img src="img/arrow_white.png"
+                                    alt="Стрелка влево" class="swiper__arrow swiper__arrow_next">
+                            </picture>
+                        </button>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="form" class="form">
+                <picture>
+                    <source srcset="img/building.webp" type="image/webp"><img src="img/building.png" alt="Здание"
+                        class="form__building">
+                </picture>
+                <picture>
+                    <source srcset="img/Ellipse-3.webp" type="image/webp"><img src="img/Ellipse-3.png" alt="Фон"
+                        class="form__ellipse">
+                </picture>
+                <div class="container form__container">
+                    <h6 class="form__title title _anim__items _anim-no-hide">Бесплатная консультация</h6>
+                    <p class="form__text _anim__items _anim-no-hide">Lorem Ipsum является стандартной "рыбой" для
+                        текстов
+                        на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+                        размеров </p>
+                    <form class="form__main">
+                        <div class="form__inputs">
+                            <input placeholder="Имя" type="text"
+                                class="form__input form__input_name _anim__items _anim-no-hide">
+                            <input placeholder="Телефон" type="text"
+                                class="form__input form__input_phone _anim__items _anim-no-hide">
+                        </div>
+                        <button class="form__btn _anim__items _anim-no-hide">Жду звонка</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer id="footer" class="footer">
+            <div class="container footer__container">
+                <div class="footer__about">
+                    <p class="footer__logo">LOGO</p>
+                    <p class="footer__text">Lorem Ipsum является стандартной "рыбой" для текстов на латинице
+                        с начала XVI века.</p>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Обо мне</a></li>
+                    <li><a href="#" class="footer__link">Услуги</a></li>
+                    <li><a href="#" class="footer__link">Взаимодействие</a></li>
+                    <li><a href="#" class="footer__link">Сертификаты</a></li>
+                    <li><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+                <ul class="footer__list footer__list_right">
+                    <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+                    <li><a href="#" class="footer__link">Карта сайта</a></li>
+                </ul>
+                <div class="footer__contacts">
+                    <div class="footer__phone">
+                        <picture>
+                            <source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt="Телефон"
+                                class="footer__phoneicon">
+                        </picture>
+                        <a href="tel:+77070000000" class="footer__number">+7 (707) 000-00-00</a>
+                    </div>
+                    <div class="footer__mail">
+                        <picture>
+                            <source srcset="img/mail.webp" type="image/webp"><img src="img/mail.png" alt="Почта"
+                                class="footer__mailicon">
+                        </picture>
+                        <p class="footer__email">urist@gmail.com</p>
+                    </div>
+                    <div class="footer__media">
+                        <svg class="footer__mediaicon footer__mediaicon_inst" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.987" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.5625 0C15.5208 0 16.4792 0 17.4375 0C23.0402 0.680494 27.259 3.45133 30.0938 8.3125C31.1372 10.2794 31.7726 12.3628 32 14.5625C32 15.5208 32 16.4792 32 17.4375C31.3195 23.0402 28.5487 27.259 23.6875 30.0938C21.7206 31.1372 19.6372 31.7726 17.4375 32C16.4792 32 15.5208 32 14.5625 32C8.95975 31.3195 4.74101 28.5487 1.90625 23.6875C0.862831 21.7206 0.227413 19.6372 0 17.4375C0 16.4792 0 15.5208 0 14.5625C0.680469 8.95981 3.4513 4.74108 8.3125 1.90625C10.2794 0.862831 12.3628 0.227413 14.5625 0ZM15.5625 6.8125C16.9996 6.854 18.4371 6.88525 19.875 6.90625C22.1084 6.93313 23.7021 7.9435 24.6562 9.9375C24.9142 10.644 25.0601 11.3731 25.0938 12.125C25.1354 14.7083 25.1354 17.2917 25.0938 19.875C24.8542 23.1146 23.1146 24.8542 19.875 25.0938C18.5828 25.1095 17.2911 25.1408 16 25.1875C14.7089 25.1408 13.4172 25.1095 12.125 25.0938C9.89162 25.0669 8.29788 24.0565 7.34375 22.0625C7.08581 21.356 6.93994 20.6269 6.90625 19.875C6.89512 18.5806 6.86387 17.2889 6.8125 16C6.86387 14.7111 6.89512 13.4194 6.90625 12.125C6.95375 9.62138 8.15162 7.96513 10.5 7.15625C11.0133 7.02556 11.5341 6.94225 12.0625 6.90625C13.2399 6.89575 14.4065 6.8645 15.5625 6.8125Z"
+                                fill="#CE9D77" />
+                            <path opacity="0.977" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.8125 8.43751C14.9376 8.42707 17.0626 8.43751 19.1875 8.46876C22.1771 8.37501 23.625 9.82295 23.5313 12.8125C23.5868 15.2926 23.566 17.7718 23.4688 20.25C23.289 21.9709 22.3619 23.023 20.6875 23.4063C20.1898 23.4723 19.6898 23.5139 19.1875 23.5313C16.7075 23.5868 14.2283 23.5659 11.75 23.4688C10.0214 23.2988 8.96933 22.3717 8.59377 20.6875C8.52877 20.2106 8.48715 19.7314 8.46877 19.25C8.41271 16.7491 8.43352 14.2491 8.53127 11.75C8.70127 10.0214 9.62833 8.96932 11.3125 8.59376C11.8215 8.53788 12.3215 8.48582 12.8125 8.43751ZM20.8125 10C20.6773 10.0606 20.5315 10.1126 20.375 10.1563C19.6347 10.783 19.6347 11.408 20.375 12.0313C21.263 12.3323 21.8046 12.0198 22 11.0938C21.8731 10.4356 21.4773 10.071 20.8125 10ZM15.5 11.3125C13.7076 11.6146 12.4263 12.5937 11.6563 14.25C10.937 16.3625 11.4058 18.1646 13.0625 19.6563C14.8065 20.9046 16.619 21.0088 18.5 19.9688C20.4803 18.5071 21.0948 16.6008 20.3438 14.25C19.382 12.2112 17.7674 11.232 15.5 11.3125Z"
+                                fill="#CE9D77" />
+                            <path opacity="0.977" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.375 12.9374C16.9612 12.7459 18.1175 13.3501 18.8437 14.7499C19.4275 16.5628 18.8962 17.9273 17.25 18.8436C15.4371 19.4274 14.0725 18.8961 13.1562 17.2499C12.6294 15.7419 12.9731 14.4815 14.1875 13.4686C14.5595 13.2237 14.9553 13.0466 15.375 12.9374Z"
+                                fill="#CE9D77" />
+                        </svg>
+                        <svg class="footer__mediaicon footer__mediaicon_vk" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.625 0C15.5625 0 16.5 0 17.4375 0C23.0402 0.680494 27.259 3.45133 30.0938 8.3125C31.1372 10.2794 31.7726 12.3628 32 14.5625C32 15.5 32 16.4375 32 17.375C31.2197 23.6442 27.9697 28.1129 22.25 30.7812C20.676 31.4247 19.051 31.831 17.375 32C16.4375 32 15.5 32 14.5625 32C8.32669 31.1906 3.87878 27.9406 1.21875 22.25C0.585283 20.6952 0.179033 19.0911 0 17.4375C0 16.4792 0 15.5208 0 14.5625C0.612936 9.29638 3.13377 5.22346 7.5625 2.34375C9.74512 1.0294 12.0992 0.24815 14.625 0ZM13.875 10.8125C14.8768 10.7937 15.8768 10.8249 16.875 10.9062C17.3917 10.9855 17.6729 11.2876 17.7188 11.8125C17.7292 12.0208 17.7396 12.2292 17.75 12.4375C17.6873 13.4996 17.6768 14.5621 17.7188 15.625C17.7344 15.8284 17.7969 16.0159 17.9062 16.1875C18.0704 16.343 18.2475 16.3534 18.4375 16.2188C19.0154 15.6348 19.5259 14.9993 19.9688 14.3125C20.4804 13.3829 20.9492 12.4349 21.375 11.4688C21.4583 11.4271 21.5417 11.3854 21.625 11.3438C22.9167 11.3021 24.2083 11.3021 25.5 11.3438C25.8846 11.4353 26.02 11.6749 25.9062 12.0625C25.7178 12.6464 25.4469 13.1881 25.0938 13.6875C24.3854 14.6458 23.6771 15.6042 22.9688 16.5625C22.6654 16.9557 22.6446 17.3515 22.9062 17.75C23.8501 18.631 24.7251 19.5685 25.5312 20.5625C25.7634 20.8498 25.9197 21.1726 26 21.5312C25.8911 21.9109 25.6411 22.1401 25.25 22.2188C24.2083 22.2604 23.1667 22.2604 22.125 22.2188C21.7085 22.1771 21.3335 22.0312 21 21.7812C20.3522 21.1544 19.7272 20.5086 19.125 19.8438C18.8716 19.5853 18.5799 19.5228 18.25 19.6562C18.1532 19.7321 18.0803 19.8259 18.0312 19.9375C17.8613 20.5581 17.7155 21.1831 17.5938 21.8125C17.4648 21.9971 17.2878 22.1116 17.0625 22.1562C14.9404 22.3861 13.0654 21.8236 11.4375 20.4688C10.1089 19.1612 8.99438 17.6924 8.09375 16.0625C7.37706 14.7334 6.71044 13.3792 6.09375 12C6.01705 11.7443 6.06913 11.5256 6.25 11.3438C6.52112 11.3148 6.79194 11.2836 7.0625 11.25C7.91575 11.2976 8.76994 11.3288 9.625 11.3438C9.89606 11.4274 10.1148 11.5837 10.2812 11.8125C10.8594 13.3028 11.6302 14.6778 12.5938 15.9375C12.7885 16.1223 13.0072 16.2681 13.25 16.375C13.3873 16.3533 13.5019 16.2908 13.5938 16.1875C13.6661 15.9189 13.7286 15.6481 13.7812 15.375C13.8229 14.5 13.8229 13.625 13.7812 12.75C13.7172 12.1234 13.3735 11.7589 12.75 11.6562C12.6964 11.6132 12.6548 11.5611 12.625 11.5C12.6932 11.3379 12.7974 11.2024 12.9375 11.0938C13.239 10.935 13.5515 10.8413 13.875 10.8125Z"
+                                fill="#CE9D77" />
+                        </svg>
+                        <svg class="footer__mediaicon footer__mediaicon_facebook" width="32" height="32"
+                            viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.993" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.625 0C15.5625 0 16.5 0 17.4375 0C23.0402 0.680494 27.259 3.45133 30.0938 8.3125C31.1372 10.2794 31.7726 12.3628 32 14.5625C32 15.5 32 16.4375 32 17.375C31.2197 23.6442 27.9697 28.1129 22.25 30.7812C20.676 31.4247 19.051 31.831 17.375 32C16.4375 32 15.5 32 14.5625 32C8.18337 31.1703 3.6938 27.8161 1.09375 21.9375C0.533181 20.4767 0.168598 18.9767 0 17.4375C0 16.4792 0 15.5208 0 14.5625C0.612936 9.29638 3.13377 5.22346 7.5625 2.34375C9.74512 1.0294 12.0992 0.24815 14.625 0ZM17.4375 7.625C18.4197 7.60512 19.3988 7.626 20.375 7.6875C20.4182 7.72031 20.4495 7.762 20.4688 7.8125C20.5104 8.75 20.5104 9.6875 20.4688 10.625C20.4167 10.6771 20.3646 10.7292 20.3125 10.7812C19.625 10.8021 18.9375 10.8229 18.25 10.8438C17.7643 10.9129 17.5247 11.1942 17.5312 11.6875C17.5 12.333 17.4896 12.9788 17.5 13.625C18.4212 13.5969 19.3378 13.6281 20.25 13.7188C20.3251 13.7752 20.3772 13.8481 20.4062 13.9375C20.4479 14.875 20.4479 15.8125 20.4062 16.75C20.3869 16.8291 20.3557 16.9021 20.3125 16.9688C19.3795 17.0594 18.442 17.0907 17.5 17.0625C17.5104 19.4376 17.5 21.8126 17.4688 24.1875C17.4167 24.2396 17.3646 24.2917 17.3125 24.3438C16.2917 24.3854 15.2708 24.3854 14.25 24.3438C14.1111 24.303 14.0381 24.2092 14.0312 24.0625C14 21.7292 13.9896 19.3959 14 17.0625C13.2052 17.0821 12.4136 17.0613 11.625 17C11.5817 16.9672 11.5505 16.9255 11.5312 16.875C11.4896 15.8542 11.4896 14.8333 11.5312 13.8125C11.5625 13.7812 11.5938 13.75 11.625 13.7188C12.4164 13.6875 13.2081 13.6771 14 13.6875C13.9776 12.7269 14.0088 11.7686 14.0938 10.8125C14.4814 8.9795 15.596 7.917 17.4375 7.625Z"
+                                fill="#CE9D77" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230220230415"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
